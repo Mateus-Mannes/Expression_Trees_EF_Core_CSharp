@@ -140,7 +140,7 @@ Running it on debug mode and analyzing the variables, the value of the final fil
 ```C#
 {Param_0 => value(System.Collections.Generic.List`1[Type]).Contains(Param_0.Property)}
 ```
-Therefore, now we have a generic way of executing the search querys in parts, doing this request:
+Therefore, now we have a generic way of executing the search query in parts, doing this request:
 
 ```C#
 var result = await _context.DbSet.SelectInChunksAsync(filterList, x => x.ColumnToFilter);
